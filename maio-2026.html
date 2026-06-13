@@ -35,7 +35,7 @@
 
   /* ── Layout ─────────────────────────────────────── */
   .container { max-width: 860px; margin: 0 auto; padding: 0 24px; }
-  .container-wide { max-width: 1100px; margin: 0 auto; padding: 0 24px; }
+  .container-wide { max-width: 1280px; margin: 0 auto; padding: 0 24px; }
 
   /* ── Header ─────────────────────────────────────── */
   header {
@@ -199,7 +199,7 @@
   .charts-section h2 { border-color: var(--navy); }
   .chart-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
     gap: 28px; margin-top: 24px;
   }
   .chart-card {
@@ -207,7 +207,7 @@
     border: 1px solid var(--rule); border-radius: 6px;
     overflow: hidden;
   }
-  .chart-card.full { grid-column: 1 / -1; }
+  .chart-card.full { grid-column: 1; }
   .chart-label {
     padding: 10px 14px;
     display: flex; align-items: center; gap: 10px;
@@ -240,8 +240,6 @@
   @media (max-width: 640px) {
     .hero-stats { grid-template-columns: 1fr; }
     .monitor-grid { grid-template-columns: 1fr; }
-    .chart-grid { grid-template-columns: 1fr; }
-    .chart-card.full { grid-column: 1; }
     nav { display: none; }
   }
 
